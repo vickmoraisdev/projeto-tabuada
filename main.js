@@ -2,14 +2,17 @@ function result(){
     let txtnum = document.getElementById('txtnum')
     let num = Number(txtnum.value)
     let res = document.getElementById('res')
+    let tab = document.getElementById('seltab')
 
-    res.innerHTML = ''
+    tab.innerHTML = ''
     if(txtnum.value === ''){
         window.alert('[ERRO] Informe um valor válido.')
-        res.innerHTML = 'Digite um número acima'
+        tab.innerHTML = '<option>Digite um número acima</option>'
     } else{
         for(let c = 1; c <= 10; c++){
-            res.innerHTML += `${num} x ${c} = ${num*c} <br>`
+            let item = document.createElement('option')
+            item.text = `${num} x ${c} = ${num*c}`
+            tab.appendChild(item)
         }
     }
 }

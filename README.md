@@ -25,7 +25,7 @@ Este projeto foi criado para praticar meus conhecimentos em **HTML, CSS e JavaSc
 
 ## 📸 Imagem do projeto
 
-(![Site](image.png))
+![Site](image.png)
 
 ## 🌐 Acesse o projeto
 
